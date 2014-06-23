@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29B7656C1941226A00D042F1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B7656B1941226A00D042F1 /* main.cpp */; };
+		29294A5F19579CC800607F3F /* WordList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29294A5E19579CC800607F3F /* WordList.cpp */; };
+		29513C3F194786C100F70F92 /* WordData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29513C3E194786C100F70F92 /* WordData.cpp */; };
+		29B7656C1941226A00D042F1 /* wordListDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B7656B1941226A00D042F1 /* wordListDriver.cpp */; };
 		29B7656E1941226A00D042F1 /* A2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 29B7656D1941226A00D042F1 /* A2.1 */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29294A5D19579CB700607F3F /* WordList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
+		29294A5E19579CC800607F3F /* WordList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordList.cpp; sourceTree = "<group>"; };
+		29513C3D1947869E00F70F92 /* WordData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordData.h; sourceTree = "<group>"; };
+		29513C3E194786C100F70F92 /* WordData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordData.cpp; sourceTree = "<group>"; };
+		29513C41194A617100F70F92 /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
 		29B765681941226A00D042F1 /* A2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = A2; sourceTree = BUILT_PRODUCTS_DIR; };
-		29B7656B1941226A00D042F1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		29B7656B1941226A00D042F1 /* wordListDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wordListDriver.cpp; sourceTree = "<group>"; };
 		29B7656D1941226A00D042F1 /* A2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = A2.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +67,13 @@
 		29B7656A1941226A00D042F1 /* A2 */ = {
 			isa = PBXGroup;
 			children = (
-				29B7656B1941226A00D042F1 /* main.cpp */,
+				29B7656B1941226A00D042F1 /* wordListDriver.cpp */,
+				29294A5D19579CB700607F3F /* WordList.h */,
 				29B7656D1941226A00D042F1 /* A2.1 */,
+				29513C3D1947869E00F70F92 /* WordData.h */,
+				29513C3E194786C100F70F92 /* WordData.cpp */,
+				29513C41194A617100F70F92 /* utilities.h */,
+				29294A5E19579CC800607F3F /* WordList.cpp */,
 			);
 			path = A2;
 			sourceTree = "<group>";
@@ -117,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B7656C1941226A00D042F1 /* main.cpp in Sources */,
+				29294A5F19579CC800607F3F /* WordList.cpp in Sources */,
+				29B7656C1941226A00D042F1 /* wordListDriver.cpp in Sources */,
+				29513C3F194786C100F70F92 /* WordData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +241,7 @@
 				29B765731941226A00D042F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
