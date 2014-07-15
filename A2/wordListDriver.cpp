@@ -10,19 +10,16 @@
 #include <iostream>
 #include "WordData.h"
 #include "utilities.h"
+#include "WordList.h"
 
 using std::endl;
 
 int main(int argc, const char * argv[])
 {
-    string w1 = "Smir";
-    string w2 = "wOrLd";
-    string w3 = "AMIR";
-    WordData wd1(w1,4);
-    //cout << wd1<<endl;
-    cout << wd1.compare(w1)<<endl;
-    //cout << wd1.compare(w2)<<endl;
-    //cout << wd1.compare(w3)<<endl;
+    WordList list("/Users/Amir/Dropbox/Xcode/A2/A2/Seuss.txt");
+    list.print();
+    list.print("wh");
+    list.print("th");
 
     return 0;
 }

@@ -18,6 +18,7 @@ WordData::WordData(string word,int line)
 {
     this->word=word;
     addLine(line);
+    frequency = 0;
 }
 
 void WordData::addLine(int line)
@@ -51,19 +52,18 @@ const vector<int>& WordData::getLines()
 
 ostream& operator<<(ostream& sout,const WordData& object)
 {
-    sout<<object.word << " ";
+    sout<<setw(20)<<object.word << " ";
+    sout << "("<< object.frequency<< ")" <<" ";
     for (auto c : object.lines)
         sout << c << " ";
 
     return sout;
 }
 
-int WordData::compare(string word)
+int WordData::compare(string outerWord)
 {
-    toLower(word);
-    string temp = word;
-    toLower(temp);
-    cout << word << endl;
-    return (temp.compare(word));
+    string lowCWord = toLower(word);
+    string lowWOuterWord = toLower(outerWord);
+    return (lowCWord.compare(lowWOuterWord));
 }
 

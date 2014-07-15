@@ -12,12 +12,14 @@
 #include <iostream>
 #include <string>
 #include <locale>
+#include <iomanip>
 #include "utilities.h"
 
 using std::string;
 using std::vector;
 using std::ostream;
 using std::cout;
+using std::setw;
 
 class WordData{
 public:

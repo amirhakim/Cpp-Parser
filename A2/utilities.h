@@ -12,16 +12,47 @@
 #include <string>
 #include <stdio.h>
 #include <ctype.h>
-using std::cout;
-using std::endl;
 using std::tolower;
+using std::string;
 
-static void toLower(std::string& word)
+static string toLower(std::string& word)
 {
+    char wordcopy[word.length()];
     for (int i=0; i<word.length(); ++i)
     {
-        word[i]=tolower(word[i]);
+        wordcopy[i] =tolower(word[i]);
     }
+    string wordLower=wordcopy;
+    return wordLower;
+}
+
+static string toUpper(std::string& word)
+{
+    char wordcopy[word.length()];
+    for (int i=0; i<word.length(); ++i)
+    {
+        wordcopy[i] =toupper(word[i]);
+    }
+    string wordUpper=wordcopy;
+    return wordUpper;
+}
+
+
+static bool removeNonAlpha(std::string & word)
+{
+    for (int i = 0; i < word.length(); ++i)
+    {
+        if (!isalpha(word[i]))
+        {
+            word.erase(i, 1);//remove non alphabitical char
+            i = 0;
+        }
+    }
+    if ((!isalpha(word[0]))&&(word.length()==1))
+    {
+        return false;
+    }
+    return true;
 }
 
 #endif
